@@ -1,7 +1,6 @@
 import socket
 import threading
 import time
-import socks
 from datetime import datetime
 
 class DoS:
@@ -12,9 +11,6 @@ class DoS:
 		self.UseTor = UseTor
 		self.TPS = 0
 		self.Delimiter = 2000
-
-		if self.UseTor:
-			socks.set_default_proxy(socks.SOCKS5, '127.0.0.1', 9150)
 
 		self.threads = []
 
