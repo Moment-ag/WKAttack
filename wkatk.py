@@ -1,6 +1,7 @@
 import socket
 import threading
 import time
+import sock
 from datetime import datetime
 
 class DoS:
